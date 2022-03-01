@@ -12,9 +12,12 @@ namespace FileOperationDemo
         public static void Main(string[] args)
         {
             FileDemo file = new FileDemo();
-            file.FileExists();
-            file.ReadAllLines();
-            file.ReadAllText();
+            //  file.FileExists();
+            //  file.ReadAllLines();
+            //  file.ReadAllText();
+              file.FileCopy();
+           
+
         }
     }
 

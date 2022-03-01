@@ -37,5 +37,14 @@ namespace FileOperationDemo
             Console.WriteLine(lines);
 
         }
+        public void FileCopy()
+        {
+            String path = @"E:\VSCode\BasicProgram\FileOperation_Demo\FileOperationDemo\Sample.txt";
+            String copypath = @"E:\VSCode\BasicProgram\FileOperation_Demo\FileOperationDemo\Sample1.txt";
+
+            File.Copy(path, copypath);
+
+        }
+      
     }
 }
