@@ -29,6 +29,13 @@ namespace FileOperationDemo
             Console.WriteLine(lines[1]);
 
         }
+        public void ReadAllText()
+        {
+            String path = @"E:\VSCode\BasicProgram\FileOperation_Demo\FileOperationDemo\Sample.txt";
+            String lines;
+            lines = File.ReadAllText(path);
+            Console.WriteLine(lines);
 
+        }
     }
-    }
+}

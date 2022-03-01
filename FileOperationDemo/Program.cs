@@ -13,7 +13,8 @@ namespace FileOperationDemo
         {
             FileDemo file = new FileDemo();
             file.FileExists();
-
+            file.ReadAllLines();
+            file.ReadAllText();
         }
     }
 
