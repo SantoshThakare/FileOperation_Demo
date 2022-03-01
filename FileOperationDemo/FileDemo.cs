@@ -52,5 +52,20 @@ namespace FileOperationDemo
             File.Delete(path);
 
         }
+        public  void ReadFromStreamReader()
+        {
+            String path = @"E:\VSCode\BasicProgram\FileOperation_Demo\FileOperationDemo\Sample.txt";
+
+            using (StreamReader sr = File.OpenText(path))
+            {
+                String s = "";
+                while ((s = sr.ReadLine()) != null)
+                {
+                    Console.WriteLine(s);
+                }
+            }
+
+        }
+
     }
 }
