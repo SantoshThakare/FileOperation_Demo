@@ -52,7 +52,7 @@ namespace FileOperationDemo
             File.Delete(path);
 
         }
-        public  void ReadFromStreamReader()
+        public void ReadFromStreamReader()
         {
             String path = @"E:\VSCode\BasicProgram\FileOperation_Demo\FileOperationDemo\Sample.txt";
 
@@ -66,6 +66,16 @@ namespace FileOperationDemo
             }
 
         }
+        public void WriteUsingStreamWriter()
+        {
+            String path = @"E:\VSCode\BasicProgram\FileOperation_Demo\FileOperationDemo\Sample.txt";
 
+            using (StreamWriter sr = File.AppendText(path))
+            {
+                sr.WriteLine("\n Hellow World - .Net is awesome1");
+                sr.Close();
+                Console.WriteLine(File.ReadAllText(path));
+            }
+        }
     }
 }

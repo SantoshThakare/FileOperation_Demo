@@ -17,7 +17,9 @@ namespace FileOperationDemo
             //  file.ReadAllText();
             //   file.FileCopy();
             //  file.DeleteFile();
-            file.ReadFromStreamReader();
+            //   file.ReadFromStreamReader();
+            file.WriteUsingStreamWriter();
+
 
         }
     }
