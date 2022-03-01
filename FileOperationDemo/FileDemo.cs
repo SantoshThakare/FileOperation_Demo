@@ -45,6 +45,12 @@ namespace FileOperationDemo
             File.Copy(path, copypath);
 
         }
-      
+        public  void DeleteFile()
+        {
+            String path = @"E:\VSCode\BasicProgram\FileOperation_Demo\FileOperationDemo\Sample1.txt";
+
+            File.Delete(path);
+
+        }
     }
 }

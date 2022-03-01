@@ -15,8 +15,8 @@ namespace FileOperationDemo
             //  file.FileExists();
             //  file.ReadAllLines();
             //  file.ReadAllText();
-              file.FileCopy();
-           
+            //   file.FileCopy();
+            file.DeleteFile();
 
         }
     }
