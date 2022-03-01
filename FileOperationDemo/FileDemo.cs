@@ -9,13 +9,26 @@ namespace FileOperationDemo
 {
     public class FileDemo
     {
-        public  void FileExists()
+        public void FileExists()
         {
-            String path = @"E:\VSCode\BasicProgram\FileOperationDemo\Sample.txt";
+            String path = @"E:\VSCode\BasicProgram\FileOperation_Demo\FileOperationDemo\Sample.txt";
             if (File.Exists(path))
             {
                 Console.WriteLine("File exists");
             }
+            else
+                Console.WriteLine("File doesn't exists");
         }
+        public void ReadAllLines()
+        {
+            String path = @"E:\VSCode\BasicProgram\FileOperation_Demo\FileOperationDemo\Sample.txt";
+            String[] lines;
+
+            lines = File.ReadAllLines(path);
+            Console.WriteLine(lines[0]);
+            Console.WriteLine(lines[1]);
+
+        }
+
     }
-}
+    }
